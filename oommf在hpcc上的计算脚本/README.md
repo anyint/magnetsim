@@ -14,12 +14,12 @@
       $ zstat -f
       
    会有如下显示   
-      queuename                      qtype resv/used/tot. load_avg arch          states
+     ` queuename                      qtype resv/used/tot. load_avg arch          states
       #---------------------------------------------------------------------------------
       serial@c0211.local             BI    0/0/16         0.34     linux-x64     
       #---------------------------------------------------------------------------------
       serial@c0212.local             BI    0/0/16         1.33     linux-x64     
-      $ 
+      $ `
 
       
       
