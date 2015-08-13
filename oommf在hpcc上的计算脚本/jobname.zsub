@@ -1,0 +1,15 @@
+#!/bin/bash
+#$ -cwd
+#$ -j y 
+#$ -S /bin/bash
+#$ -N YOUR-JOB-NAME
+#$ -q serial
+
+
+# Set up the environment for thread enabled Tcl/Tk
+export PATH="/lustre/home/YOUR-USERNAMEusr/ActiveTcl/bin:"$PATH
+export LD_LIBRARY_PATH="/lustre/home/YOUR-USERNAME/usr/ActiveTcl/lib:"\
+$LD_LIBRARY_PATH:"/usr/lib64"
+
+# Finally run the simulation
+ tclsh ~/usr/oommf/oommf.tcl boxsi -restart 2 -threads 16  ../to-your-jobdir/your-job-script-name.mif 
