@@ -4,16 +4,19 @@
 
 ## 如何使用git和github
 
-### 1. 克隆远程项目仓库到本地
+### 第一步. 克隆远程项目仓库到本地
 
-     git clone git@github.com:anyint/magnetsim.git  
+     git clone git@github.com:anyint/magnetsim.git 
+     
+     #如果你暂时只是需要下载使用本项目，接下来的两步可以不用继续
     
-### 2. 在本地项目中添加或者修改项目文件
+### 第二步. 在本地项目中添加或者修改项目文件
 
-  根据您的需求和发现修改或者添加文件到本地项目中
+  根据你的需求和发现修改或者添加文件到本地项目中
 
-### 3. 将修改好的文件保存到项目并传送到远程项目库
+### 第三步. 将修改好的文件保存到项目并传送到远程项目库
      git add .			#（将本地文件夹加入到本地项目）
+     
      git commit -m 'Your commit'	#（添加你的注释）
      git remote add origin https://github.com:anyint/magnetsim.git
      git push origin master	#(你要推送的分支)
